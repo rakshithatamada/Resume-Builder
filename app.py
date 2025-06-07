@@ -15,7 +15,7 @@ def sanitize_text(text):
 class PDF(FPDF):
     def header(self):
         self.set_font("Helvetica", 'B', 16)
-        self.cell(0, 10, self.title.upper(), ln=True, align='C')  # Name centered and UPPERCASE
+        self.cell(0, 10, self.title.upper(), ln=True, align='C')  
         self.ln(5)
 
     def section_title(self, title):
@@ -34,7 +34,7 @@ def create_resume_pdf(data):
     pdf.title = data['name']
     pdf.add_page()
 
-    # Contact Info
+    # Contact Information
     pdf.set_font("Helvetica", size=12)
     pdf.cell(0, 10, f"Email: {data['email']}", ln=True)
     pdf.cell(0, 10, f"Contact: {data['phone']}", ln=True)
@@ -44,7 +44,7 @@ def create_resume_pdf(data):
     pdf.section_title("Objective")
     pdf.section_body(data['objective'])
 
-    # Education Table
+    # Education Details
     pdf.section_title("Educational Qualifications")
     pdf.set_font("Helvetica", 'B', 12)
     col_widths = [40, 50, 40, 20, 20]
