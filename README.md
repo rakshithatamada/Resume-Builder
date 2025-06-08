@@ -22,7 +22,7 @@ and accessible, particularly for students, job seekers, and early-career profess
 ## Installation
 
 1. Clone the repository:  
-    git clone https://github.com/rakshithatamada/resume builder.git
+    git clone https://github.com/rakshithatamada/resumebuilder.git
 2. Navigate to the project directory:  
     cd resume builder
 3. Install dependencies:  
